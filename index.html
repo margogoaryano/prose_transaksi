@@ -1,1 +1,78 @@
-<html><body>Test</body></html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Proses Transaksi</title>
+
+    <!-- Memanggil file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>PROSES TRANSAKSI</h2>
+
+    <div class="box">
+
+        <!-- Kolom Kiri -->
+        <div class="left">
+            <h3>FORM INPUT</h3>
+
+            <label>No Faktur:</label><br>
+            <input type="text" id="noFaktur">
+
+            <label>Kode Barang:</label><br>
+            <input type="text" id="kodeBrg" placeholder="B001 / B002 / B003">
+
+            <label>Jumlah Transaksi:</label><br>
+            <input type="number" id="jumlah">
+
+            <label>Jenis Bayar:</label><br>
+            <select id="jenis">
+                <option value="tunai">Tunai</option>
+                <option value="kredit">Kredit</option>
+            </select>
+
+            <button onclick="proses()">PROSES</button>
+        </div>
+
+        <!-- Kolom Kanan -->
+        <div class="right">
+            <h3>HASIL TRANSAKSI</h3>
+
+            <label>No Faktur:</label><br>
+            <input type="text" id="outFaktur" readonly>
+
+            <label>Kode Barang:</label><br>
+            <input type="text" id="outKode" readonly>
+
+            <label>Nama Barang:</label><br>
+            <input type="text" id="outNama" readonly>
+
+            <label>Harga Barang:</label><br>
+            <input type="text" id="outHarga" readonly>
+
+            <label>Jumlah Transaksi:</label><br>
+            <input type="text" id="outJumlah" readonly>
+
+            <label>Jenis Bayar:</label><br>
+            <input type="text" id="outJenis" readonly>
+
+            <label>Total Harga:</label><br>
+            <input type="text" id="outTotal" readonly>
+
+            <label>Diskon:</label><br>
+            <input type="text" id="outDiskon" readonly>
+
+            <label>Total Bayar:</label><br>
+            <input type="text" id="outBayar" readonly>
+        </div>
+
+    </div>
+</div>
+
+<!-- Memanggil file JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
